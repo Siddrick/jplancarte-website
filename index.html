@@ -302,23 +302,21 @@ display: inline-block;
 /* ── FIX 4: Stats box shifted LEFT so right edge is visible ── */
 .hero-stats {
 position: absolute;
-top: 30%;
-right: 2%;
+top: 25%;
+right: 1%;
 transform: translateY(-50%);
 display: flex;
 flex-direction: column;
 gap: 3px;
 z-index: 3;
-animation: heroIn 0.9s 0.2s ease both;
-opacity: 0;
 text-align: center;
 background: rgba(10,15,40,0.35);
 border: 1px solid rgba(255,255,255,0.15);
 border-radius: 10px;
-padding: 8px 8px;
+padding: 7px 6px;
 backdrop-filter: blur(2px);
-width: 36%;
-max-width: 150px;
+width: 34%;
+max-width: 140px;
 }
 
 .stat {
@@ -694,8 +692,8 @@ color: #aaaaaa;
 
 input, select, textarea {
 background: rgba(255,255,255,0.04);
-border: 1px solid rgba(255,255,255,0.1);
-border-radius: 6px;
+border: 1px solid rgba(255,255,255,0.12);
+border-radius: 10px;
 padding: 12px 14px;
 color: #ffffff;
 font-family: ‘Barlow’, sans-serif;
@@ -704,6 +702,7 @@ outline: none;
 transition: border-color 0.2s, background 0.2s;
 width: 100%;
 min-width: 0;
+box-sizing: border-box;
 }
 
 input:focus, select:focus, textarea:focus {
@@ -1035,7 +1034,7 @@ background: #242424;
 border: 1px solid rgba(255,255,255,0.07);
 border-radius: 12px;
 padding: 32px 28px;
-overflow: hidden;
+overflow: visible;
 box-sizing: border-box;
 }
 .review-form-title {
@@ -1548,7 +1547,7 @@ nav { padding: 0 16px; height: 56px; }
 .hero-name-lines { font-size: 32px; }
 .hero-sub { font-size: 14px; margin-bottom: 24px; }
 .hero-btns { flex-direction: column; gap: 10px; }
-.btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 14px 20px; font-size: 13px; }
+.btn-primary, .btn-secondary { width: auto; text-align: center; padding: 12px 20px; font-size: 13px; display: inline-block; }
 .hero-stats { position: static; margin-top: 36px; justify-content: flex-start; gap: 24px; flex-wrap: wrap; }
 .stat-num { font-size: 28px; }
 .stat-label { font-size: 9px; }
@@ -1621,7 +1620,7 @@ footer { flex-direction: column; text-align: center; padding: 24px 20px; gap: 10
     <h1>
       <div class="hero-brand-wrap">
         <span class="hero-floating-j">J</span>
-        <div class="hero-name-lines">Plancarte Inspections</div>
+        <div class="hero-name-lines" style="text-transform:uppercase;">Plancarte Inspections</div>
       </div>
     </h1>
     <p class="hero-sub">
@@ -1629,7 +1628,7 @@ footer { flex-direction: column; text-align: center; padding: 24px 20px; gap: 10
       Mobile CARB emissions inspections for trucks, buses, RVs and heavy-duty vehicles — we come to you.
     </p>
     <div class="hero-btns">
-      <a href="#pricing" class="btn-primary">Book an Inspection</a>
+      <a href="#pricing" class="btn-primary" style="display:inline-block;width:auto;padding:14px 24px;">Book an Inspection</a>
       <a href="tel:9095414375" class="btn-secondary">📞 Call (909) 541-4375</a>
     </div>
     <p class="hero-call-note">Can't reach us? <a href="#pricing">Book online</a> and we'll confirm within a few hours.</p>
