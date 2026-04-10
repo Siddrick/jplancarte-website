@@ -109,7 +109,7 @@ min-height: 85vh;
 position: relative;
 display: flex;
 align-items: center;
-overflow: hidden;
+overflow: visible;
 padding: 80px 40px 60px 40px;
 }
 
@@ -152,8 +152,8 @@ background-size: 60px 60px;
 .hero-content {
 position: relative;
 z-index: 2;
-max-width: 52%;
-padding-right: 10px;
+max-width: 55%;
+padding-right: 8px;
 animation: heroIn 0.9s ease both;
 }
 
@@ -248,12 +248,12 @@ color: rgba(255,255,255,0.85);
 }
 
 .hero-sub {
-font-size: 17px;
+font-size: 15px;
 font-weight: 300;
 color: #aaaaaa;
-line-height: 1.7;
-max-width: 500px;
-margin-bottom: 36px;
+line-height: 1.6;
+max-width: 100%;
+margin-bottom: 28px;
 }
 
 .hero-sub strong { color: #ffffff; font-weight: 600; }
@@ -302,12 +302,12 @@ display: inline-block;
 /* ── FIX 4: Stats box shifted LEFT so right edge is visible ── */
 .hero-stats {
 position: absolute;
-top: 44%;
+top: 38%;
 right: 3%;
 transform: translateY(-50%);
 display: flex;
 flex-direction: column;
-gap: 8px;
+gap: 6px;
 z-index: 3;
 animation: heroIn 0.9s 0.2s ease both;
 opacity: 0;
@@ -315,10 +315,10 @@ text-align: center;
 background: rgba(10,15,40,0.35);
 border: 1px solid rgba(255,255,255,0.15);
 border-radius: 12px;
-padding: 14px 12px;
+padding: 12px 10px;
 backdrop-filter: blur(2px);
-width: 42%;
-max-width: 190px;
+width: 40%;
+max-width: 175px;
 }
 
 .stat {
@@ -327,11 +327,11 @@ text-align: center;
 
 .stat-num {
 font-family: ‘Bebas Neue’, Impact, sans-serif;
-font-size: 40px;
+font-size: 34px;
 color: #ffffff;
 line-height: 1;
 letter-spacing: 1px;
-text-shadow: 0 0 12px rgba(0,0,0,1), 0 2px 8px rgba(0,0,0,1), 0 0 4px rgba(0,0,0,1);
+text-shadow: 0 0 12px rgba(0,0,0,1), 0 2px 8px rgba(0,0,0,1);
 }
 
 .stat-num span { color: #c8102e; }
@@ -1143,8 +1143,8 @@ border-radius: 4px;
 /* ── FIX 3: CALIFORNIA MAP IMAGE — moved higher ── */
 .ca-map-img {
 position: absolute;
-right: 18%;
-top: 52%;
+right: 14%;
+top: 54%;
 bottom: auto;
 transform: translateY(-50%);
 width: 310px;
@@ -1637,7 +1637,7 @@ footer { flex-direction: column; text-align: center; padding: 24px 20px; gap: 10
       <div class="stat-label">Truck Models</div>
     </div>
     <div class="stat">
-      <div class="stat-num" style="font-size:44px;"><span>100</span>%</div>
+      <div class="stat-num" style="font-size:38px;"><span>100</span>%</div>
       <div class="stat-label">Mobile Service</div>
     </div>
     <div class="stat">
