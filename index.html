@@ -28,12 +28,12 @@
 
 - { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: #1c1c1c; }
 
 body {
-background: var(–charcoal);
-color: var(–white);
-font-family: ‘Barlow’, sans-serif;
+background: #1c1c1c;
+color: #ffffff;
+font-family: ‘Barlow’, Arial, sans-serif;
 overflow-x: hidden;
 }
 
@@ -56,7 +56,7 @@ justify-content: space-between;
 font-family: ‘Bebas Neue’, sans-serif;
 font-size: 24px;
 letter-spacing: 2px;
-color: var(–white);
+color: #ffffff;
 text-decoration: none;
 display: flex;
 align-items: center;
@@ -65,7 +65,7 @@ position: relative;
 }
 
 .nav-logo .nav-j {
-color: var(–red);
+color: #c8102e;
 font-family: ‘Great Vibes’, cursive;
 font-size: 52px;
 line-height: 1;
@@ -86,22 +86,22 @@ font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 13px;
 letter-spacing: 2.5px;
 text-transform: uppercase;
-color: var(–gray);
+color: #aaaaaa;
 text-decoration: none;
 transition: color 0.2s;
 }
 
-.nav-links a:hover { color: var(–white); }
+.nav-links a:hover { color: #ffffff; }
 
 .nav-cta {
-background: var(–red);
-color: var(–white) !important;
+background: #c8102e;
+color: #ffffff !important;
 padding: 8px 20px;
 border-radius: 4px;
 transition: background 0.2s !important;
 }
 
-.nav-cta:hover { background: var(–red-dark) !important; color: var(–white) !important; }
+.nav-cta:hover { background: #8b0a1e !important; color: #ffffff !important; }
 
 /* ── HERO ── */
 .hero {
@@ -110,7 +110,7 @@ position: relative;
 display: flex;
 align-items: center;
 overflow: hidden;
-padding: 100px 40px 60px;
+padding: 80px 40px 60px;
 }
 
 .hero-bg {
@@ -136,7 +136,7 @@ content: ‘’;
 position: absolute;
 bottom: 0; left: 0; right: 0;
 height: 4px;
-background: linear-gradient(90deg, var(–red) 40%, var(–navy) 40%);
+background: linear-gradient(90deg, #c8102e 40%, #1a2b5e 40%);
 }
 
 /* grid texture */
@@ -180,7 +180,7 @@ margin-bottom: 24px;
 .hero-badge::before {
 content: ‘’;
 width: 6px; height: 6px;
-background: var(–red);
+background: #c8102e;
 border-radius: 50%;
 animation: pulse 2s infinite;
 }
@@ -195,7 +195,7 @@ font-family: ‘Bebas Neue’, sans-serif;
 font-size: clamp(36px, 5.5vw, 72px);
 line-height: 1;
 letter-spacing: 3px;
-color: var(–white);
+color: #ffffff;
 margin-bottom: 24px;
 position: relative;
 }
@@ -217,8 +217,8 @@ gap: 0;
 .hero-floating-j {
 font-family: ‘Great Vibes’, cursive;
 font-size: clamp(70px, 9vw, 115px);
-color: var(–red);
-text-shadow: 0 0 30px rgba(200,16,46,0.6), 2px 2px 0 var(–red-dark);
+color: #c8102e;
+text-shadow: 0 0 30px rgba(200,16,46,0.6), 2px 2px 0 #8b0a1e;
 line-height: 1;
 z-index: 2;
 pointer-events: none;
@@ -250,7 +250,7 @@ display: inline-block;
 
 .hero h1 .line2 {
 display: inline;
-color: var(–white);
+color: #ffffff;
 }
 
 .hero h1 .line2 {
@@ -261,13 +261,13 @@ color: rgba(255,255,255,0.85);
 .hero-sub {
 font-size: 17px;
 font-weight: 300;
-color: var(–gray);
+color: #aaaaaa;
 line-height: 1.7;
 max-width: 500px;
 margin-bottom: 36px;
 }
 
-.hero-sub strong { color: var(–white); font-weight: 600; }
+.hero-sub strong { color: #ffffff; font-weight: 600; }
 
 .hero-btns {
 display: flex;
@@ -276,8 +276,8 @@ flex-wrap: wrap;
 }
 
 .btn-primary {
-background: var(–red);
-color: var(–white);
+background: #c8102e;
+color: #ffffff;
 padding: 14px 32px;
 border-radius: 4px;
 font-family: ‘Barlow Condensed’, sans-serif;
@@ -290,11 +290,11 @@ transition: background 0.2s, transform 0.15s;
 display: inline-block;
 }
 
-.btn-primary:hover { background: var(–red-dark); transform: translateY(-2px); }
+.btn-primary:hover { background: #8b0a1e; transform: translateY(-2px); }
 
 .btn-secondary {
 background: transparent;
-color: var(–white);
+color: #ffffff;
 padding: 14px 32px;
 border-radius: 4px;
 border: 1px solid rgba(255,255,255,0.25);
@@ -327,11 +327,11 @@ text-align: center;
 .stat-num {
 font-family: ‘Bebas Neue’, sans-serif;
 font-size: 38px;
-color: var(–white);
+color: #ffffff;
 line-height: 1;
 }
 
-.stat-num span { color: var(–red); }
+.stat-num span { color: #c8102e; }
 
 .stat-label {
 font-family: ‘Barlow Condensed’, sans-serif;
@@ -346,7 +346,7 @@ text-shadow: 0 1px 6px rgba(0,0,0,0.8), 0 0 12px rgba(0,0,0,0.6);
 
 /* ── SERVICES ── */
 .services {
-background: var(–charcoal2);
+background: #242424;
 padding: 90px 40px;
 position: relative;
 }
@@ -369,7 +369,7 @@ font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 11px;
 letter-spacing: 4px;
 text-transform: uppercase;
-color: var(–red);
+color: #c8102e;
 margin-bottom: 12px;
 }
 
@@ -377,7 +377,7 @@ margin-bottom: 12px;
 font-family: ‘Bebas Neue’, sans-serif;
 font-size: clamp(36px, 5vw, 56px);
 letter-spacing: 2px;
-color: var(–white);
+color: #ffffff;
 line-height: 1;
 }
 
@@ -385,7 +385,7 @@ line-height: 1;
 margin-top: 12px;
 font-size: 15px;
 font-weight: 300;
-color: var(–gray);
+color: #aaaaaa;
 max-width: 480px;
 margin-left: auto;
 margin-right: auto;
@@ -401,7 +401,7 @@ margin: 0 auto;
 }
 
 .service-card {
-background: var(–charcoal);
+background: #1c1c1c;
 border: 1px solid rgba(255,255,255,0.06);
 border-radius: 10px;
 padding: 32px 28px;
@@ -420,7 +420,7 @@ content: ‘’;
 position: absolute;
 top: 0; left: 0;
 width: 3px; height: 100%;
-background: linear-gradient(180deg, var(–red), var(–red-dark));
+background: linear-gradient(180deg, #c8102e, #8b0a1e);
 opacity: 0;
 transition: opacity 0.2s;
 }
@@ -437,7 +437,7 @@ font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 20px;
 font-weight: 700;
 letter-spacing: 1px;
-color: var(–white);
+color: #ffffff;
 margin-bottom: 10px;
 text-transform: uppercase;
 }
@@ -445,7 +445,7 @@ text-transform: uppercase;
 .service-card p {
 font-size: 14px;
 font-weight: 300;
-color: var(–gray);
+color: #aaaaaa;
 line-height: 1.7;
 }
 
@@ -465,7 +465,7 @@ text-transform: uppercase;
 
 /* ── WHY US ── */
 .why {
-background: var(–navy-dark);
+background: #0f1a3a;
 padding: 90px 40px;
 position: relative;
 overflow: hidden;
@@ -498,14 +498,14 @@ margin-bottom: 20px;
 }
 
 .why-text h2 em {
-color: var(–red);
+color: #c8102e;
 font-style: normal;
 }
 
 .why-text p {
 font-size: 15px;
 font-weight: 300;
-color: var(–gray);
+color: #aaaaaa;
 line-height: 1.8;
 margin-bottom: 14px;
 }
@@ -531,7 +531,7 @@ transition: border-color 0.2s;
 
 .why-dot {
 width: 8px; height: 8px;
-background: var(–red);
+background: #c8102e;
 border-radius: 50%;
 margin-top: 6px;
 flex-shrink: 0;
@@ -543,20 +543,20 @@ font-size: 15px;
 font-weight: 700;
 letter-spacing: 1px;
 text-transform: uppercase;
-color: var(–white);
+color: #ffffff;
 margin-bottom: 4px;
 }
 
 .why-point p {
 font-size: 13px;
-color: var(–gray);
+color: #aaaaaa;
 line-height: 1.6;
 margin: 0;
 }
 
 /* ── BOOKING ── */
 .booking {
-background: var(–charcoal);
+background: #1c1c1c;
 padding: 90px 40px;
 position: relative;
 }
@@ -586,12 +586,12 @@ line-height: 1;
 margin-bottom: 16px;
 }
 
-.booking-info h2 em { color: var(–red); font-style: normal; }
+.booking-info h2 em { color: #c8102e; font-style: normal; }
 
 .booking-info p {
 font-size: 14px;
 font-weight: 300;
-color: var(–gray);
+color: #aaaaaa;
 line-height: 1.8;
 margin-bottom: 28px;
 }
@@ -607,17 +607,17 @@ display: flex;
 align-items: center;
 gap: 12px;
 font-size: 14px;
-color: var(–gray);
+color: #aaaaaa;
 }
 
 .contact-method a {
-color: var(–white);
+color: #ffffff;
 text-decoration: none;
 font-weight: 600;
 transition: color 0.2s;
 }
 
-.contact-method a:hover { color: var(–red); }
+.contact-method a:hover { color: #c8102e; }
 
 .method-icon {
 width: 36px; height: 36px;
@@ -631,7 +631,7 @@ flex-shrink: 0;
 
 /* FORM */
 .booking-form {
-background: var(–charcoal2);
+background: #242424;
 border: 1px solid rgba(255,255,255,0.07);
 border-radius: 12px;
 padding: 36px 32px;
@@ -642,7 +642,7 @@ font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 11px;
 letter-spacing: 4px;
 text-transform: uppercase;
-color: var(–red);
+color: #c8102e;
 margin-bottom: 24px;
 }
 
@@ -666,7 +666,7 @@ font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 10px;
 letter-spacing: 2.5px;
 text-transform: uppercase;
-color: var(–gray);
+color: #aaaaaa;
 }
 
 input, select, textarea {
@@ -674,7 +674,7 @@ background: rgba(255,255,255,0.04);
 border: 1px solid rgba(255,255,255,0.1);
 border-radius: 6px;
 padding: 12px 14px;
-color: var(–white);
+color: #ffffff;
 font-family: ‘Barlow’, sans-serif;
 font-size: 14px;
 outline: none;
@@ -687,14 +687,14 @@ border-color: rgba(200,16,46,0.5);
 background: rgba(255,255,255,0.07);
 }
 
-select option { background: var(–charcoal2); color: var(–white); }
+select option { background: #242424; color: #ffffff; }
 
 textarea { resize: vertical; min-height: 90px; }
 
 .form-submit {
 width: 100%;
-background: var(–red);
-color: var(–white);
+background: #c8102e;
+color: #ffffff;
 border: none;
 padding: 15px;
 border-radius: 6px;
@@ -708,7 +708,7 @@ transition: background 0.2s, transform 0.15s;
 margin-top: 6px;
 }
 
-.form-submit:hover { background: var(–red-dark); transform: translateY(-2px); }
+.form-submit:hover { background: #8b0a1e; transform: translateY(-2px); }
 
 .form-note {
 margin-top: 12px;
@@ -734,18 +734,18 @@ margin-bottom: 14px;
 font-family: ‘Bebas Neue’, sans-serif;
 font-size: 28px;
 letter-spacing: 2px;
-color: var(–white);
+color: #ffffff;
 margin-bottom: 8px;
 }
 
 .success-msg p {
 font-size: 14px;
-color: var(–gray);
+color: #aaaaaa;
 }
 
 /* ── COVERAGE ── */
 .coverage {
-background: var(–charcoal2);
+background: #242424;
 padding: 70px 40px;
 text-align: center;
 position: relative;
@@ -783,7 +783,7 @@ color: #8899cc;
 transition: border-color 0.2s, color 0.2s;
 }
 
-.area-chip:hover { border-color: var(–red); color: var(–white); }
+.area-chip:hover { border-color: #c8102e; color: #ffffff; }
 
 /* ── FOOTER ── */
 footer {
@@ -801,11 +801,11 @@ border-top: 1px solid rgba(255,255,255,0.05);
 font-family: ‘Bebas Neue’, sans-serif;
 font-size: 22px;
 letter-spacing: 2px;
-color: var(–white);
+color: #ffffff;
 }
 
 .footer-logo span {
-color: var(–red);
+color: #c8102e;
 font-family: ‘Dancing Script’, cursive;
 font-size: 38px;
 vertical-align: middle;
@@ -815,7 +815,7 @@ text-shadow: 0 0 10px rgba(200,16,46,0.4);
 
 /* ── PRICING ── */
 .pricing {
-background: var(–charcoal);
+background: #1c1c1c;
 padding: 90px 40px;
 position: relative;
 }
@@ -834,7 +834,7 @@ max-width: 900px;
 margin: 0 auto 24px;
 }
 .price-card {
-background: var(–charcoal2);
+background: #242424;
 border: 1px solid rgba(255,255,255,0.07);
 border-radius: 12px;
 padding: 32px 28px;
@@ -850,7 +850,7 @@ background: linear-gradient(160deg, #1e1e1e, #1a1020);
 position: absolute;
 top: -12px; left: 50%;
 transform: translateX(-50%);
-background: var(–red);
+background: #c8102e;
 color: #fff;
 font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 10px;
@@ -865,18 +865,18 @@ font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 15px;
 letter-spacing: 1px;
 text-transform: uppercase;
-color: var(–gray);
+color: #aaaaaa;
 margin-bottom: 10px;
 }
 .price-amount {
 font-family: ‘Bebas Neue’, sans-serif;
 font-size: 52px;
-color: var(–white);
+color: #ffffff;
 line-height: 1;
 margin-bottom: 8px;
 }
-.price-amount span { color: var(–red); }
-.price-amount small { font-size: 22px; color: var(–gray); }
+.price-amount span { color: #c8102e; }
+.price-amount small { font-size: 22px; color: #aaaaaa; }
 .price-sub { font-size: 12px; color: #666; font-weight: 300; line-height: 1.6; }
 .pricing-note {
 text-align: center;
@@ -889,7 +889,7 @@ margin: 0 auto;
 
 /* ── FAQ ── */
 .faq {
-background: var(–charcoal2);
+background: #242424;
 padding: 90px 40px;
 position: relative;
 }
@@ -922,14 +922,14 @@ cursor: pointer;
 font-family: ‘Barlow’, sans-serif;
 font-size: 15px;
 font-weight: 600;
-color: var(–white);
-background: var(–charcoal);
+color: #ffffff;
+background: #1c1c1c;
 transition: background 0.2s;
 gap: 16px;
 }
 .faq-q:hover { background: rgba(200,16,46,0.08); }
 .faq-arrow {
-color: var(–red);
+color: #c8102e;
 font-size: 18px;
 transition: transform 0.3s;
 flex-shrink: 0;
@@ -939,7 +939,7 @@ display: none;
 padding: 16px 22px 20px;
 font-size: 14px;
 font-weight: 300;
-color: var(–gray);
+color: #aaaaaa;
 line-height: 1.8;
 background: rgba(255,255,255,0.02);
 border-top: 1px solid rgba(255,255,255,0.04);
@@ -949,7 +949,7 @@ border-top: 1px solid rgba(255,255,255,0.04);
 
 /* ── REVIEWS ── */
 .reviews {
-background: var(–charcoal);
+background: #1c1c1c;
 padding: 90px 40px;
 position: relative;
 }
@@ -978,14 +978,14 @@ color: #555;
 .no-review-icon { font-size: 32px; margin-bottom: 12px; }
 .no-reviews-yet p { font-size: 14px; color: #555; }
 .review-card {
-background: var(–charcoal2);
+background: #242424;
 border: 1px solid rgba(255,255,255,0.07);
 border-radius: 10px;
 padding: 22px 20px;
 animation: heroIn 0.5s ease both;
 }
 .review-stars { color: #f5a623; font-size: 16px; margin-bottom: 10px; letter-spacing: 2px; }
-.review-text { font-size: 14px; font-weight: 300; color: var(–gray); line-height: 1.7; margin-bottom: 14px; }
+.review-text { font-size: 14px; font-weight: 300; color: #aaaaaa; line-height: 1.7; margin-bottom: 14px; }
 .review-author {
 font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 12px;
@@ -996,7 +996,7 @@ text-transform: uppercase;
 .review-form-wrap {
 max-width: 600px;
 margin: 0 auto;
-background: var(–charcoal2);
+background: #242424;
 border: 1px solid rgba(255,255,255,0.07);
 border-radius: 12px;
 padding: 32px 28px;
@@ -1006,7 +1006,7 @@ font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 11px;
 letter-spacing: 4px;
 text-transform: uppercase;
-color: var(–red);
+color: #c8102e;
 margin-bottom: 6px;
 }
 .review-form-sub {
@@ -1046,7 +1046,7 @@ line-height: 1.5;
 }
 .price-btn {
 margin-top: 20px;
-background: var(–red);
+background: #c8102e;
 color: #fff;
 padding: 12px;
 border-radius: 6px;
@@ -1058,7 +1058,7 @@ font-weight: 700;
 cursor: pointer;
 transition: background 0.2s;
 }
-.price-card:hover .price-btn { background: var(–red-dark); }
+.price-card:hover .price-btn { background: #8b0a1e; }
 
 /* ── MODAL ── */
 .modal-overlay {
@@ -1126,7 +1126,7 @@ color: #666;
 font-weight: 300;
 }
 .hero-call-note a {
-color: var(–red);
+color: #c8102e;
 text-decoration: none;
 font-weight: 600;
 }
@@ -1134,8 +1134,8 @@ font-weight: 600;
 /* ── PRICE COMPARISON BANNER ── */
 .price-banner {
 background: linear-gradient(135deg, #0a0a0a 0%, #1c1c1c 40%, #1a1a2e 100%);
-border-top: 3px solid var(–red);
-border-bottom: 3px solid var(–red);
+border-top: 3px solid #c8102e;
+border-bottom: 3px solid #c8102e;
 padding: 40px 40px;
 position: relative;
 overflow: hidden;
@@ -1172,7 +1172,7 @@ margin-bottom: 12px;
 .banner-headline {
 font-family: ‘Bebas Neue’, sans-serif;
 font-size: clamp(28px, 4vw, 48px);
-color: var(–white);
+color: #ffffff;
 letter-spacing: 1px;
 line-height: 1.1;
 margin-bottom: 12px;
@@ -1182,13 +1182,13 @@ color: #555;
 text-decoration: line-through;
 }
 .banner-headline em {
-color: var(–red);
+color: #c8102e;
 font-style: normal;
 }
 .banner-sub {
 font-size: 14px;
 font-weight: 300;
-color: var(–gray);
+color: #aaaaaa;
 line-height: 1.7;
 max-width: 480px;
 }
@@ -1224,7 +1224,7 @@ font-size: 36px;
 color: #444;
 line-height: 1;
 }
-.compare-us .compare-price { color: var(–red); }
+.compare-us .compare-price { color: #c8102e; }
 .compare-price s { text-decoration: line-through; }
 .compare-note {
 font-size: 11px;
@@ -1250,7 +1250,7 @@ max-width: 900px;
 margin: 0 auto 36px;
 background: rgba(200,16,46,0.07);
 border: 1px solid rgba(200,16,46,0.3);
-border-left: 4px solid var(–red);
+border-left: 4px solid #c8102e;
 border-radius: 8px;
 padding: 18px 20px;
 display: flex;
@@ -1285,12 +1285,12 @@ font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 13px;
 letter-spacing: 1px;
 cursor: pointer;
-color: var(–white);
+color: #ffffff;
 background: rgba(255,255,255,0.04);
 transition: all 0.15s;
 }
-.timeslot:hover { border-color: var(–red); background: rgba(200,16,46,0.1); }
-.timeslot.selected { background: var(–red); border-color: var(–red); color: #fff; }
+.timeslot:hover { border-color: #c8102e; background: rgba(200,16,46,0.1); }
+.timeslot.selected { background: #c8102e; border-color: #c8102e; color: #fff; }
 .timeslot.taken { background: rgba(255,255,255,0.02); color: #444; border-color: rgba(255,255,255,0.04); cursor: not-allowed; text-decoration: line-through; }
 @media (max-width: 480px) { .timeslot-grid { grid-template-columns: repeat(2,1fr); } }
 
@@ -1321,7 +1321,7 @@ margin-bottom: 10px;
 font-family: ‘Barlow’, sans-serif;
 font-size: 15px;
 font-weight: 700;
-color: var(–white);
+color: #ffffff;
 margin-bottom: 4px;
 }
 .zelle-handle {
@@ -1347,7 +1347,7 @@ display: flex;
 flex-direction: column;
 gap: 3px;
 }
-.zelle-option strong { color: var(–white); font-size: 13px; }
+.zelle-option strong { color: #ffffff; font-size: 13px; }
 .zelle-qr-placeholder {
 width: 160px;
 height: 100px;
@@ -1382,7 +1382,7 @@ padding: 16px 14px;
 cursor: pointer;
 transition: border-color 0.2s, background 0.2s;
 }
-.price-pick-option:hover { border-color: var(–red); background: rgba(200,16,46,0.07); }
+.price-pick-option:hover { border-color: #c8102e; background: rgba(200,16,46,0.07); }
 .price-pick-letter {
 width: 36px; height: 36px;
 border-radius: 6px;
@@ -1398,7 +1398,7 @@ flex-shrink: 0;
 font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 15px;
 font-weight: 700;
-color: var(–white);
+color: #ffffff;
 letter-spacing: 0.5px;
 display: flex;
 align-items: center;
@@ -1422,7 +1422,7 @@ justify-content: center;
 position: fixed;
 bottom: 24px;
 right: 20px;
-background: var(–red);
+background: #c8102e;
 color: #fff;
 font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 15px;
@@ -1931,7 +1931,7 @@ footer { flex-direction: column; text-align: center; padding: 24px 20px; gap: 10
       <div class="price-pick-option" onclick="selectAndBook('B', 'Fleet Inspection – $75/truck (3+ trucks)')">
         <div class="price-pick-letter" style="background:rgba(200,16,46,0.15);border-color:rgba(200,16,46,0.4);border-radius:50%;transform:rotate(45deg);font-size:15px;"><span style="transform:rotate(-45deg);display:block;">B</span></div>
         <div>
-          <div class="price-pick-name">Fleet (3+ Trucks) <span style="font-size:10px;background:var(--red);color:#fff;padding:2px 8px;border-radius:3px;margin-left:6px;">BEST VALUE</span></div>
+          <div class="price-pick-name">Fleet (3+ Trucks) <span style="font-size:10px;background:#c8102e;color:#fff;padding:2px 8px;border-radius:3px;margin-left:6px;">BEST VALUE</span></div>
           <div class="price-pick-price">$75/truck — Same location, back to back</div>
         </div>
       </div>
@@ -1948,7 +1948,7 @@ footer { flex-direction: column; text-align: center; padding: 24px 20px; gap: 10
 </div>
 
 <footer>
-  <div class="footer-logo"><span style="font-family:'Great Vibes',cursive;font-size:38px;color:var(--red);vertical-align:middle;line-height:0.7;text-shadow:0 0 10px rgba(200,16,46,0.4);margin-right:2px;">J</span>Plancarte Inspections</div>
+  <div class="footer-logo"><span style="font-family:'Great Vibes',cursive;font-size:38px;color:#c8102e;vertical-align:middle;line-height:0.7;text-shadow:0 0 10px rgba(200,16,46,0.4);margin-right:2px;">J</span>Plancarte Inspections</div>
   <div class="footer-right">
     Certified Emissions Inspector · (909) 541-4375 · Inland Empire & LA
   </div>
