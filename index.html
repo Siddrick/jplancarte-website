@@ -302,7 +302,7 @@ display: inline-block;
 /* ── FIX 4: Stats box shifted LEFT so right edge is visible ── */
 .hero-stats {
 position: absolute;
-top: 60%;
+top: 66%;
 right: 1%;
 transform: translateY(-50%);
 display: flex;
@@ -2011,13 +2011,23 @@ footer { flex-direction: column; text-align: center; padding: 24px 20px; gap: 10
     Certified Emissions Inspector · <a href="tel:9095414375" style="color:inherit;text-decoration:none;">(909) 541-4375</a> · Inland Empire & LA
   </div>
   <div class="footer-legal">
-    <a href="privacy.html">Privacy Policy</a>
+    <a href="#" onclick="openLegal('privacy'); return false;">Privacy Policy</a>
     <span>·</span>
-    <a href="terms.html">Terms of Service</a>
+    <a href="#" onclick="openLegal('terms'); return false;">Terms of Service</a>
     <span>·</span>
-    <a href="disclaimer.html">Disclaimer</a>
+    <a href="#" onclick="openLegal('disclaimer'); return false;">Disclaimer</a>
     <span>·</span>
-    <a href="refund.html">Refund Policy</a>
+    <a href="#" onclick="openLegal('refund'); return false;">Refund Policy</a>
+  </div>
+
+  <!-- Legal Modal -->
+
+  <div class="modal-overlay" id="legal-overlay" onclick="closeLegal()" style="align-items:flex-start;padding-top:80px;">
+    <div class="modal" onclick="event.stopPropagation()" style="max-width:560px;max-height:80vh;">
+      <div class="modal-close" onclick="closeLegal()">✕</div>
+      <div id="legal-title" class="form-title" style="font-size:16px;margin-bottom:16px;"></div>
+      <div id="legal-content" style="font-size:13px;color:#aaa;line-height:1.8;"></div>
+    </div>
   </div>
 </footer>
 
