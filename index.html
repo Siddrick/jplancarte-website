@@ -303,20 +303,22 @@ display: inline-block;
 .hero-stats {
 position: absolute;
 top: 50%;
-right: 5%;
+right: 4%;
 transform: translateY(-50%);
 display: flex;
 flex-direction: column;
-gap: 20px;
+gap: 10px;
 z-index: 3;
 animation: heroIn 0.9s 0.2s ease both;
 opacity: 0;
 text-align: center;
-background: rgba(10,15,40,0.55);
-border: 1px solid rgba(255,255,255,0.08);
-border-radius: 14px;
-padding: 24px 20px;
+background: rgba(10,15,40,0.65);
+border: 1px solid rgba(255,255,255,0.1);
+border-radius: 12px;
+padding: 16px 14px;
 backdrop-filter: blur(4px);
+width: 44%;
+max-width: 200px;
 }
 
 .stat {
@@ -325,23 +327,23 @@ text-align: center;
 
 .stat-num {
 font-family: ‘Bebas Neue’, Impact, sans-serif;
-font-size: 58px;
+font-size: 40px;
 color: #ffffff;
 line-height: 1;
-letter-spacing: 2px;
-text-shadow: 0 2px 12px rgba(0,0,0,0.9);
+letter-spacing: 1px;
+text-shadow: 0 2px 8px rgba(0,0,0,0.9);
 }
 
 .stat-num span { color: #c8102e; }
 
 .stat-label {
 font-family: ‘Barlow Condensed’, sans-serif;
-font-size: 12px;
+font-size: 9px;
 font-weight: 700;
-letter-spacing: 3px;
+letter-spacing: 2px;
 color: rgba(255,255,255,0.85);
 text-transform: uppercase;
-margin-top: 6px;
+margin-top: 3px;
 }
 
 /* ── SERVICES ── */
@@ -362,30 +364,46 @@ background: linear-gradient(90deg, transparent, rgba(200,16,46,0.5), transparent
 .section-header {
 text-align: center;
 margin-bottom: 60px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .section-eyebrow {
 font-family: ‘Barlow Condensed’, sans-serif;
-font-size: 11px;
-letter-spacing: 4px;
+font-size: 12px;
+letter-spacing: 5px;
 text-transform: uppercase;
 color: #c8102e;
 margin-bottom: 12px;
+font-weight: 700;
 }
 
 .section-title {
 font-family: ‘Bebas Neue’, sans-serif;
-font-size: clamp(36px, 5vw, 56px);
-letter-spacing: 2px;
+font-size: clamp(42px, 7vw, 72px);
+letter-spacing: 3px;
 color: #ffffff;
 line-height: 1;
+text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+position: relative;
+display: inline-block;
+}
+.section-title::after {
+content: ‘’;
+display: block;
+width: 60px;
+height: 3px;
+background: #c8102e;
+margin: 10px auto 0;
+border-radius: 2px;
 }
 
 .section-sub {
-margin-top: 12px;
+margin-top: 14px;
 font-size: 15px;
-font-weight: 300;
-color: #aaaaaa;
+font-weight: 400;
+color: #bbbbbb;
 max-width: 480px;
 margin-left: auto;
 margin-right: auto;
@@ -1121,24 +1139,25 @@ border-radius: 4px;
 /* ── FIX 3: CALIFORNIA MAP IMAGE — moved higher ── */
 .ca-map-img {
 position: absolute;
-right: -30px;
-top: 20%;
-transform: translateY(-10%);
-width: 460px;
+right: -10px;
+top: 38%;
+bottom: auto;
+transform: translateY(-50%);
+width: 420px;
 height: auto;
-z-index: 1;
+z-index: 2;
 pointer-events: none;
-opacity: 0.75;
+opacity: 0.7;
 border-radius: 4px;
 }
 @media (max-width: 768px) {
 .ca-map-img {
-width: 280px;
-right: -40px;
+width: 300px;
+right: -10px;
+bottom: 40px;
 top: auto;
-bottom: 20px;
 transform: none;
-opacity: 0.55;
+opacity: 0.6;
 }
 }
 .hero-call-note {
@@ -1158,9 +1177,9 @@ font-weight: 600;
 background: linear-gradient(135deg, #0a0a0a 0%, #1c1c1c 40%, #1a1a2e 100%);
 border-top: 3px solid #c8102e;
 border-bottom: 3px solid #c8102e;
-padding: 40px 24px;
+padding: 40px 20px;
 position: relative;
-overflow: hidden;
+overflow: visible;
 }
 .price-banner::before {
 content: ‘’;
@@ -1172,31 +1191,36 @@ pointer-events: none;
 }
 .price-banner-inner {
 width: 100%;
+max-width: 100%;
 display: grid;
 grid-template-columns: 1fr auto;
-gap: 32px;
+gap: 24px;
 align-items: center;
+padding: 0 4px;
 }
 .banner-tag {
 display: inline-block;
-background: rgba(200,16,46,0.2);
-border: 1px solid rgba(200,16,46,0.4);
-color: #e8a0aa;
+background: rgba(200,16,46,0.25);
+border: 1px solid rgba(200,16,46,0.6);
+color: #ff8899;
 font-family: ‘Barlow Condensed’, sans-serif;
-font-size: 11px;
-letter-spacing: 3px;
+font-size: 12px;
+letter-spacing: 4px;
 text-transform: uppercase;
-padding: 4px 12px;
-border-radius: 3px;
-margin-bottom: 12px;
+padding: 6px 16px;
+border-radius: 4px;
+margin-bottom: 16px;
+font-weight: 700;
+box-shadow: 0 0 16px rgba(200,16,46,0.2);
 }
 .banner-headline {
 font-family: ‘Bebas Neue’, sans-serif;
-font-size: clamp(28px, 4vw, 48px);
+font-size: clamp(32px, 5vw, 58px);
 color: #ffffff;
-letter-spacing: 1px;
-line-height: 1.1;
-margin-bottom: 12px;
+letter-spacing: 2px;
+line-height: 1.05;
+margin-bottom: 14px;
+text-shadow: 0 2px 20px rgba(0,0,0,0.6);
 }
 .banner-headline s {
 color: #555;
@@ -1223,8 +1247,9 @@ text-align: center;
 background: rgba(255,255,255,0.04);
 border: 1px solid rgba(255,255,255,0.08);
 border-radius: 10px;
-padding: 16px 24px;
-min-width: 110px;
+padding: 14px 16px;
+min-width: 90px;
+flex-shrink: 0;
 }
 .compare-us {
 border-color: rgba(200,16,46,0.4);
@@ -1259,9 +1284,12 @@ color: #444;
 letter-spacing: 2px;
 }
 @media (max-width: 768px) {
-.price-banner { padding: 32px 20px; }
-.price-banner-inner { grid-template-columns: 1fr; gap: 28px; }
-.banner-compare { justify-content: center; }
+.price-banner { padding: 28px 16px; }
+.price-banner-inner { grid-template-columns: 1fr; gap: 20px; }
+.banner-compare { justify-content: center; flex-wrap: nowrap; gap: 10px; }
+.compare-item { padding: 12px 14px; min-width: 80px; }
+.compare-price { font-size: 28px; }
+.banner-headline { font-size: 28px; letter-spacing: 1px; }
 .hero-call-note { font-size: 12px; }
 }
 
@@ -1520,7 +1548,7 @@ nav { padding: 0 16px; height: 56px; }
 /* SERVICES */
 .services { padding: 50px 20px; }
 .services-grid { grid-template-columns: 1fr; gap: 16px; }
-.section-title { font-size: 32px; }
+.section-title { font-size: 38px; }
 .section-sub { font-size: 13px; }
 .service-card { padding: 24px 20px; }
 
@@ -1604,7 +1632,7 @@ footer { flex-direction: column; text-align: center; padding: 24px 20px; gap: 10
       <div class="stat-label">Truck Models</div>
     </div>
     <div class="stat">
-      <div class="stat-num" style="font-size:62px;"><span>100</span>%</div>
+      <div class="stat-num" style="font-size:44px;"><span>100</span>%</div>
       <div class="stat-label">Mobile Service</div>
     </div>
     <div class="stat">
@@ -1682,8 +1710,10 @@ footer { flex-direction: column; text-align: center; padding: 24px 20px; gap: 10
 <!-- COVERAGE -->
 
 <section class="coverage" id="coverage">
+  <div style="text-align:center;display:flex;flex-direction:column;align-items:center;">
   <div class="section-eyebrow">Service Area</div>
   <div class="section-title">Where We Operate</div>
+  </div>
   <p class="section-sub" style="margin-top:12px;">Mobile inspections throughout the Inland Empire and greater Los Angeles area.</p>
   <div class="coverage-areas">
     <div class="area-chip">Fontana</div>
