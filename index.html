@@ -152,7 +152,8 @@ background-size: 60px 60px;
 .hero-content {
 position: relative;
 z-index: 2;
-max-width: 700px;
+max-width: 50%;
+padding-right: 20px;
 animation: heroIn 0.9s ease both;
 }
 
@@ -313,7 +314,7 @@ display: inline-block;
 .hero-stats {
 position: absolute;
 top: 50%;
-right: 50px;
+right: 30px;
 transform: translateY(-50%);
 display: flex;
 flex-direction: column;
@@ -321,6 +322,7 @@ gap: 28px;
 z-index: 2;
 animation: heroIn 0.9s 0.2s ease both;
 opacity: 0;
+text-align: right;
 }
 
 .stat {
@@ -839,17 +841,19 @@ max-width: 900px;
 margin: 0 auto 24px;
 }
 .price-card {
-background: #242424;
-border: 1px solid rgba(255,255,255,0.07);
-border-radius: 12px;
+background: linear-gradient(160deg, #1c1c1c, #212121);
+border: 1px solid rgba(255,255,255,0.12);
+border-radius: 14px;
 padding: 32px 28px;
 position: relative;
 transition: transform 0.2s, border-color 0.2s;
+box-shadow: 0 4px 24px rgba(0,0,0,0.4);
 }
-.price-card:hover { transform: translateY(-4px); border-color: rgba(200,16,46,0.3); }
+.price-card:hover { transform: translateY(-4px); border-color: rgba(200,16,46,0.5); box-shadow: 0 8px 32px rgba(200,16,46,0.15); }
 .price-card-featured {
-border-color: rgba(200,16,46,0.4);
-background: linear-gradient(160deg, #1e1e1e, #1a1020);
+border-color: rgba(200,16,46,0.6);
+background: linear-gradient(160deg, #1e1212, #1a0f0f);
+box-shadow: 0 4px 32px rgba(200,16,46,0.2);
 }
 .price-badge {
 position: absolute;
@@ -866,23 +870,32 @@ border-radius: 20px;
 }
 .price-icon { font-size: 28px; margin-bottom: 14px; }
 .price-label {
-font-family: ‘Barlow Condensed’, sans-serif;
-font-size: 15px;
-letter-spacing: 1px;
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 22px;
+letter-spacing: 3px;
 text-transform: uppercase;
 color: #aaaaaa;
 margin-bottom: 10px;
 }
 .price-amount {
-font-family: ‘Bebas Neue’, sans-serif;
-font-size: 52px;
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 80px;
 color: #ffffff;
 line-height: 1;
 margin-bottom: 8px;
+text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+letter-spacing: 2px;
 }
 .price-amount span { color: #c8102e; }
-.price-amount small { font-size: 22px; color: #aaaaaa; }
-.price-sub { font-size: 12px; color: #666; font-weight: 300; line-height: 1.6; }
+.price-amount small { font-size: 26px; color: #aaaaaa; }
+.price-sub {
+font-family: ‘Barlow Condensed’, sans-serif;
+font-size: 14px;
+color: #888;
+font-weight: 400;
+line-height: 1.6;
+letter-spacing: 0.5px;
+}
 .pricing-note {
 text-align: center;
 font-size: 13px;
